@@ -1,5 +1,7 @@
 package tratamentoexceptions;
 
+import java.io.FileNotFoundException;
+
 public class Tratamento {
 
     public static void metodo1() {
@@ -30,5 +32,14 @@ public class Tratamento {
 	
 	}
 
+    
+    
+	public static void metodo3() throws FileNotFoundException {
+    	new java.io.FileReader("arquivoDeTeste.txt");
+    }
+    
+    
+    
+    
 }
 
