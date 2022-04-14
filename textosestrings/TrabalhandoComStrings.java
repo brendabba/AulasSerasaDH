@@ -1,4 +1,4 @@
-package textosestrigs;
+package textosestrings;
 
 public class TrabalhandoComStrings {
 	
