@@ -1,6 +1,7 @@
 package collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class TestaLista {
@@ -48,11 +49,22 @@ public class TestaLista {
 		
 		System.out.println("=================================================");
 		
-		//sort() >> Compareble
+		//sort() >> Compareble <<>> Trabalha com Strings
 		
+		Collections.sort(meusCarros);
+		System.out.println(meusCarros.toString());
 		
+		System.out.println("=================================================");
 		
+		//sort() >> comparator <<>> trabalha com inteiros
 		
+		meusCarros.sort(new ComparadorDeAnos());
+		System.out.println(meusCarros.toString());
+		
+		System.out.println("=================================================");
+		
+		Collections.shuffle(meusCarros); //ordem aleatória.
+		System.out.println(meusCarros.toString());
 		
 		
 		

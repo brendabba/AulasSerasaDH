@@ -70,8 +70,10 @@ public class Carro implements Comparable<Carro>{
 
 
 	@Override
-	public int compareTo(Carro o) {
+	public int compareTo(Carro carro) {
 		
-		return 0;
+		return this.getModelo().compareToIgnoreCase(carro.getModelo());
 	}
+	
+	
 }
